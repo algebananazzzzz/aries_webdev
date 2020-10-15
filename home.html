@@ -16,6 +16,7 @@
   <!-- material icons stylesheet -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
   <!-- custom CSS -->
   <link rel="stylesheet" href="items.css">
   <link rel="stylesheet" href="forms.css">
@@ -49,6 +50,11 @@
       <div class="col-md-12">
         <div class="alert alert-secondary" role="alert">
           Class: alert-secondary, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="alert alert-tertiary" role="alert">
+          Class: alert-tertiary, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
       <div class="col-md-12">
@@ -289,9 +295,18 @@
     </div>
 
     <h3>Picker</h3>
+    <!-- <input type="text" class="datepicker"> -->
 
     <h3>Range</h3>
+
+    <form action="#">
+      <p class="range-field">
+        <input type="range" id="test5" min="0" max="50" />
+      </p>
+    </form>
     <h3>Select</h3>
+    <h1>Pagination</h1>
+    <h1>Range/progress</h1>
 
   </div>
 
@@ -383,6 +398,9 @@
       }, {
         tag: 'Google',
       }],
+    });
+    $(document).ready(function() {
+      $('.datepicker').datepicker();
     });
   </script>
 
