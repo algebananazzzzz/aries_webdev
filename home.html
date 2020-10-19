@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="forms.css">
 
 
-  <title>Hello, world!</title>
+  <title>danielp's css</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
 
   </div>
 
-  <div class="container">
+  <div class="container" style="padding-bottom:27px">
     <h1>Alerts</h1>
     <div class="row no-gutters ">
 
@@ -147,29 +147,29 @@
     <h1>Card</h1>
     <div class="row">
 
-      <a href="#" class="col-md-4 anchor-card">
+      <a href="#" class="col-md-4 col-sm-12 anchor-card">
         <div class="simple-card-hover-off " style="background-color:#ff1744; width:100%">
           <div class="card-container">
             <p class="simple-card-name" style="color:#ffffff">Card with no hover</p>
           </div>
         </div>
       </a>
-      <div class="simple-card col-md-4" style="background-color:#d500f9">
+      <div class="simple-card col-md-4 col-sm-12" style="background-color:#d500f9">
         <div class="card-container">
           <p class="simple-card-name" style="color:#ffffff">Simple hoverable card</p>
         </div>
       </div>
-      <div class="simple-card col-md-4" style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
+      <div class="simple-card col-md-4 col-sm-12" style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
         <div class="card-container">
           <p class="simple-card-name" style="color:#ffffff">Add a gradient?</p>
         </div>
       </div>
-      <div class="simple-card-hover-off col-md-12" style="background-color:#651fff; height: 5vw;">
+      <div class="simple-card-hover-off col-md-12 col-sm-12 btn-bounce" style="background-color:#651fff; height: 5vw;">
         <div class="card-container">
           <p class="simple-card-name" style="color:#ffffff; font-size:15px">Vary card dimension by varying vw of height (width:20vw)</p>
         </div>
       </div>
-      <a href="#" class="col-md-6 anchor-card">
+      <a href="#" class="col-md-6 col-sm-12 anchor-card">
         <div class="image-card" style="background-image: url('castle-home.jpg');
         background-position: center;
         background-size: cover">
@@ -244,13 +244,77 @@
         </div>
       </div>
     </div>
-    <h3>Input</h3>
     <h1>Forms</h1>
+    <h3>Input</h3>
+    <div class="input-field col-md-12">
+      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+      <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field col-md-12">
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Last Name</label>
+    </div>
+    <div class="input-field col-md-12">
+      <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+      <label for="disabled">Disabled</label>
+    </div>
+    <div class="input-field col-md-12">
+      <input id="password" type="password" class="validate">
+      <label for="password">Password</label>
+    </div>
+    <div class="input-field col-md-12">
+      <input id="email" type="email" class="validate">
+      <label for="email">Email</label>
+    </div>
+
+    <div class="input-field col-md-12">
+      <input value="Value" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">First Name</label>
+    </div>
+
+    <div class="input-field col-md-12">
+      <i class="material-icons prefix">account_circle</i>
+      <input id="icon_prefix" type="text" class="validate">
+      <label for="icon_prefix">First Name</label>
+    </div>
+    <div class="input-field col-md-12 ">
+      <i class="material-icons prefix">phone</i>
+      <input id="icon_telephone" type="tel" class="validate">
+      <label for="icon_telephone">Telephone</label>
+    </div>
+    <div class="input-field col-md-12">
+      <input id="email2" type="email" class="validate">
+      <label for="email2">Email</label>
+      <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+    </div>
+    <div class="input-field col-md-12">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Textarea</label>
+    </div>
+    <div class="file-field input-field">
+      <a class="btn" style="background-color:#f50057">File</a>
+      <input type="file">
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload files">
+      </div>
+    </div>
+    <div class="input-field col-md-12">
+      <input id="input_text" type="text" data-length="10">
+      <label for="input_text">Input text</label>
+    </div>
+
     <h3>Checkboxes</h3>
     <p>
       <label>
         <input type="checkbox" />
         <span>Unchecked</span>
+      </label>
+
+    </p>
+    <p>
+      <label class="btn-bounce">
+        <input type="checkbox" />
+        <span>Bouncy</span>
       </label>
     </p>
     <p>
@@ -301,12 +365,44 @@
 
     <form action="#">
       <p class="range-field">
-        <input type="range" id="test5" min="0" max="50" />
+        <input type="range" min="0" max="100" />
       </p>
     </form>
     <h3>Select</h3>
+
+    <label>Browser Select</label>
+    <select class="browser-default col-md-3">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
     <h1>Pagination</h1>
+    <ul class="pagination center">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#2">2</a></li>
+      <li class="waves-effect btn-bounce"><a href="#3">3</a></li>
+      <li class="waves-effect"><a href="#4">4</a></li>
+      <li class="waves-effect"><a href="#5">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+
     <h1>Range/progress</h1>
+    <p>Determinate</p>
+    <div class="progress">
+      <div class="determinate" style="width: 70%"></div>
+    </div>
+    <p>Indeterminate</p>
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+    <h1>Toasts</h1>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-primary'})" class="btn" style="background-color:#f50057">Toast!</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-danger'})" class="btn" style="background-color:#d500f9">Alert!</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-success', displayLength:300})" class="btn" style="background-color:#651fff">Change duration</a>
+    <a class="btn" onclick="M.toast({html: 'I am a toast', completeCallback: function(){alert('Your toast was dismissed')}})" style="background-color:#651fff">With callback</a>
+    <a onclick="toast_action" class="btn" style="background-color:#651fff">Change duration</a>
 
   </div>
 
@@ -326,12 +422,11 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script type="text/javascript">
+  
     var granimInstance = new Granim({
       element: '#bottom-navbar-granim',
       name: 'bottom-navbar-granim',
@@ -401,6 +496,9 @@
     });
     $(document).ready(function() {
       $('.datepicker').datepicker();
+    });
+    $(document).ready(function() {
+      $('input#input_text, textarea#textarea2').characterCounter();
     });
   </script>
 
