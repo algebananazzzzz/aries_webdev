@@ -116,15 +116,46 @@
     </nav>
 
     <h1>Buttons</h1>
+      <a class="btn-floating pulse center"><i class="material-icons">menu</i></a>
+      <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+
+      <div class="add-button" >
+        <a href="#">
+        <div class="sub-button tl">
+            Back
+        </div>
+      </a>
+      <a href="#">
+
+        <div class="sub-button tr">
+            Edit
+        </div>
+      </a>
+      <a href="#">
+
+        <div class="sub-button bl">
+            Gwrite
+        </div>
+      </a>
+      <a href="#">
+
+        <div class="sub-button br">
+            Gsync
+        </div>
+      </a>
+
+      </div>
+
+
     <a href="#" class="btn-fills-red">Red</a>
     <a href="#" class="btn-fills-purple">Purple</a>
     <a href="#" class="btn-fills-indigo">Indigo</a>
     <a href="#" class="btn-fills">Default</a>
     <a href="#" class="btn-fills-blue">Blue</a>
     <a href="#" class="btn-fills-lightblue">Light blue</a>
-    <a href="#" class="btn-fills-cyan btn-bounce">Cyan bouncy</a>
+    <a href="#" class="btn-fills-cyan bounce">Cyan bouncy</a>
     <a href="#" class="btn-fills-teal">Teal</a>
-    <a href="#" class="btn-fills-green">Green</a>
+    <a href="#" class="btn-fills-green pulse">Green</a>
     <a href="#" class="btn-fills-lightgreen">Light green</a>
     <a href="#" class="btn-fills-lime">Lime</a>
     <a href="#" class="btn-fills-yellow">Yellow</a>
@@ -133,12 +164,13 @@
     <a href="#" class="btn-fills-deeporange">Deep orange</a>
 
     <br>
-    <a href="#" class="btn" style="background-color:#f50057">Classic buttons</a>
-    <a href="#" class="btn btn-bounce" style="background-color:#d500f9">You</a>
+    <a href="#" class="btn" style="background-color:#f50057">Classic buttons<i class="material-icons right">send</i>
+</a>
+    <a href="#" class="btn pulse" style="background-color:#d500f9">You</a>
     <a href="#" class="btn" style="background-color:#651fff">Can</a>
-    <a href="#" class="btn btn-bounce" style="background-color:#3d5afe">Change</a>
+    <a href="#" class="btn bounce" style="background-color:#3d5afe">Change</a>
     <a href="#" class="btn" style="background-color:#2979ff">The</a>
-    <a href="#" class="btn btn-bounce" style="background-color:#00b0ff">Colors</a>
+    <a href="#" class="btn bounce" style="background-color:#00b0ff">Colors</a>
     <a href="#" class="btn" style="background-color:#00e5ff">Yay!!</a>
 
 
@@ -148,25 +180,25 @@
     <div class="row">
 
       <a href="#" class="col-md-4 col-sm-12 anchor-card">
-        <div class="simple-card-hover-off " style="background-color:#ff1744; width:100%">
+        <div class="simple-card-hover-off pulse" style="background-color:#ff1744; width:100%">
           <div class="card-container">
-            <p class="simple-card-name" style="color:#ffffff">Card with no hover</p>
+            <p class="flow-text" style="color:#ffffff">Card with no hover</p>
           </div>
         </div>
       </a>
       <div class="simple-card col-md-4 col-sm-12" style="background-color:#d500f9">
         <div class="card-container">
-          <p class="simple-card-name" style="color:#ffffff">Simple hoverable card</p>
+          <p class="flow-text" style="color:#ffffff">Simple hoverable card</p>
         </div>
       </div>
       <div class="simple-card col-md-4 col-sm-12" style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
         <div class="card-container">
-          <p class="simple-card-name" style="color:#ffffff">Add a gradient?</p>
+          <p class="flow-text" style="color:#ffffff">Add a gradient?</p>
         </div>
       </div>
-      <div class="simple-card-hover-off col-md-12 col-sm-12 btn-bounce" style="background-color:#651fff; height: 5vw;">
+      <div class="simple-card-hover-off col-md-12 col-sm-12 bounce" style="background-color:#651fff; height: 5vw;">
         <div class="card-container">
-          <p class="simple-card-name" style="color:#ffffff; font-size:15px">Vary card dimension by varying vw of height (width:20vw)</p>
+          <p class="flow-text" style="color:#ffffff; font-size:15px">Vary card dimension by varying vw of height (width:20vw)</p>
         </div>
       </div>
       <a href="#" class="col-md-6 col-sm-12 anchor-card">
@@ -186,36 +218,17 @@
     </div>
 
     <h1>Carousel</h1>
-    <div id="carouselExampleIndicators" class="carousel col-md-6 slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="5000">
-          <img src="castle-home.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Description of first slide</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-interval="5000">
-          <img src="castle-home.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-interval="5000">
-          <img src="castle-home.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only"></span>
-      </a>
-    </div>
+    <div class="carousel col-md-12">
+    <a class="carousel-item" href="#one!"><img src="castle-home.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="castle-home.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="castle-home.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="castle-home.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="castle-home.jpg"></a>
+  </div>
+
+
+
+
     <h1>Modal</h1>
 
 
@@ -312,14 +325,14 @@
 
     </p>
     <p>
-      <label class="btn-bounce">
+      <label class="bounce">
         <input type="checkbox" />
         <span>Bouncy</span>
       </label>
     </p>
     <p>
       <label>
-        <input type="checkbox" checked="checked" />
+        <input  type="checkbox" checked="checked" />
         <span>Checked</span>
       </label>
     </p>
@@ -365,7 +378,7 @@
 
     <form action="#">
       <p class="range-field">
-        <input type="range" min="0" max="100" />
+        <input type="range" min="0" value="30" max="100" />
       </p>
     </form>
     <h3>Select</h3>
@@ -380,9 +393,9 @@
     <h1>Pagination</h1>
     <ul class="pagination center">
       <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active"><a href="#!">1</a></li>
+      <li class="active pulse"><a href="#!">1</a></li>
       <li class="waves-effect"><a href="#2">2</a></li>
-      <li class="waves-effect btn-bounce"><a href="#3">3</a></li>
+      <li class="waves-effect bounce"><a href="#3">3</a></li>
       <li class="waves-effect"><a href="#4">4</a></li>
       <li class="waves-effect"><a href="#5">5</a></li>
       <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
@@ -399,11 +412,15 @@
     </div>
     <h1>Toasts</h1>
     <a onclick="M.toast({html: 'I am a toast', classes: 'alert-primary'})" class="btn" style="background-color:#f50057">Toast!</a>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-danger'})" class="btn" style="background-color:#d500f9">Alert!</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-danger'})" class="btn" style="background-color:#d500f9">Change colors</a>
     <a onclick="M.toast({html: 'I am a toast', classes: 'alert-success', displayLength:300})" class="btn" style="background-color:#651fff">Change duration</a>
     <a class="btn" onclick="M.toast({html: 'I am a toast', completeCallback: function(){alert('Your toast was dismissed')}})" style="background-color:#651fff">With callback</a>
-    <a onclick="toast_action" class="btn" style="background-color:#651fff">Change duration</a>
-
+    <a onclick="toastaction()" class="btn" style="background-color:#651fff">Change duration</a>
+    <h1>Badges</h1>
+    <h1>Collections</h1>
+    <h1>Floating action button</h1>
+    <h1>Footer</h1>
+    <h1></h1>
   </div>
 
 
@@ -426,7 +443,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script type="text/javascript">
-  
+
+    function toastaction() {
+      var toastHTML = '<span>I am toast content</span><a href="#"><button class="toast-action-btn">Undo</button></a>';
+      M.toast({html: toastHTML});
+    }
+
     var granimInstance = new Granim({
       element: '#bottom-navbar-granim',
       name: 'bottom-navbar-granim',
@@ -500,6 +522,9 @@
     $(document).ready(function() {
       $('input#input_text, textarea#textarea2').characterCounter();
     });
+    $(document).ready(function(){
+   $('.carousel').carousel();
+ });
   </script>
 
   <style media="screen">
