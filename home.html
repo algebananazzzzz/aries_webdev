@@ -41,31 +41,35 @@
 
   <nav>
 
-  <div class="nav-wrapper">
-    <a href="#" data-target="slide-out" class="brand-logo sidenav-trigger"><i class="material-icons ">menu</i>Logo</a>
+    <div class="nav-wrapper">
+      <a href="#" data-target="slide-out" class="brand-logo sidenav-trigger"><i class="material-icons ">menu</i>Logo</a>
 
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
 
-  </div>
+    </div>
 
 
-</nav>
+  </nav>
 
-<ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background" style="background-image: url('images/confetti-bg.jpg')">
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background" style="background-image: url('images/confetti-bg.jpg')">
+        </div>
+        <a href="#user"><img class="circle" src="images/castle-home.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
       </div>
-      <a href="#user"><img class="circle" src="images/castle-home.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
+    </li>
     <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
     <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 
@@ -144,44 +148,44 @@
     </div>
     <h1>Breadcrumb</h1>
     <nav>
-    <div class="nav-wrapper">
-      <div class="col s12">
-        <a href="#!" class="breadcrumb">First</a>
-        <a href="#!" class="breadcrumb">Second</a>
-        <a href="#!" class="breadcrumb">Third</a>
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <a href="#!" class="breadcrumb">First</a>
+          <a href="#!" class="breadcrumb">Second</a>
+          <a href="#!" class="breadcrumb">Third</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
     <h1>Buttons</h1>
-    <div class="add-button halfway-fab" >
+    <div class="add-button halfway-fab">
       <a href="#">
-      <div class="sub-button tl">
+        <div class="sub-button tl">
           Back
-      </div>
-    </a>
-    <a href="#">
+        </div>
+      </a>
+      <a href="#">
 
-      <div class="sub-button tr">
+        <div class="sub-button tr">
           Edit
-      </div>
-    </a>
-    <a href="#">
+        </div>
+      </a>
+      <a href="#">
 
-      <div class="sub-button bl">
+        <div class="sub-button bl">
           Gwrite
-      </div>
-    </a>
-    <a href="#">
+        </div>
+      </a>
+      <a href="#">
 
-      <div class="sub-button br">
+        <div class="sub-button br">
           Gsync
-      </div>
-    </a>
+        </div>
+      </a>
 
     </div>
-      <a class="btn-floating pulse center"><i class="material-icons">menu</i></a>
-      <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+    <a class="btn-floating pulse center"><i class="material-icons">menu</i></a>
+    <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
 
 
 
@@ -204,7 +208,7 @@
 
     <br>
     <a href="#" class="btn" style="background-color:#f50057">Classic buttons<i class="material-icons right">send</i>
-</a>
+    </a>
     <a href="#" class="btn pulse" style="background-color:#d500f9">You</a>
     <a href="#" class="btn" style="background-color:#651fff">Can</a>
     <a href="#" class="btn bounce" style="background-color:#3d5afe">Change</a>
@@ -258,12 +262,12 @@
 
     <h1>Carousel</h1>
     <div class="carousel col-md-12">
-    <a class="carousel-item" href="#one!"><img src="images/castle-home.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="images/castle-home.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="images/castle-home.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="images/castle-home.jpg"></a>
-    <a class="carousel-item" href="#five!"><img src="images/castle-home.jpg"></a>
-  </div>
+      <a class="carousel-item" href="#one!"><img src="images/castle-home.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="images/castle-home.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="images/castle-home.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="images/castle-home.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="images/castle-home.jpg"></a>
+    </div>
 
 
 
@@ -371,7 +375,7 @@
     </p>
     <p>
       <label>
-        <input  type="checkbox" checked="checked" />
+        <input type="checkbox" checked="checked" />
         <span>Checked</span>
       </label>
     </p>
@@ -482,13 +486,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script type="text/javascript">
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
 
     function toastaction() {
       var toastHTML = '<span>I am toast content</span><a href="#"><button class="toast-action-btn">Undo</button></a>';
-      M.toast({html: toastHTML});
+      M.toast({
+        html: toastHTML
+      });
     }
 
     var granimInstance = new Granim({
@@ -564,9 +570,9 @@
     $(document).ready(function() {
       $('input#input_text, textarea#textarea2').characterCounter();
     });
-    $(document).ready(function(){
-   $('.carousel').carousel();
- });
+    $(document).ready(function() {
+      $('.carousel').carousel();
+    });
   </script>
 
   <style media="screen">

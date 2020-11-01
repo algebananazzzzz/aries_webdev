@@ -4181,8 +4181,6 @@ nav {
   line-height: 56px
 }
 
-
-
 nav.nav-extended {
   height: auto
 }
@@ -4212,8 +4210,6 @@ nav .nav-wrapper {
   position: relative;
   height: 100%
 }
-
-
 
 nav .sidenav-trigger {
   float: left;
@@ -6498,7 +6494,6 @@ textarea.materialize-textarea {
   left: 1px;
   width: 8px;
   height: 13px;
-
   -webkit-transform: rotateZ(37deg);
   transform: rotateZ(37deg);
   -webkit-transform-origin: 100% 100%;
