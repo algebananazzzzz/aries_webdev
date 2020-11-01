@@ -20,7 +20,7 @@
   <!-- custom CSS -->
   <link rel="stylesheet" href="items.css">
   <link rel="stylesheet" href="forms.css">
-
+  <link rel="stylesheet" href="materialize.css">
 
   <title>danielp's css</title>
 </head>
@@ -28,7 +28,7 @@
 <body>
 
 
-  <div id="canvas-basic" class="bgimg ">
+  <div class="bgimg ">
     <div class=" display-container">
       <div class="display-middle" style="color:white">
         <h1 class="homepage-name center">Homepage</h1>
@@ -38,7 +38,44 @@
 
   </div>
 
+
+  <nav>
+
+  <div class="nav-wrapper">
+    <a href="#" data-target="slide-out" class="brand-logo sidenav-trigger"><i class="material-icons ">menu</i>Logo</a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+
+  </div>
+
+
+</nav>
+
+<ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background" style="background-image: url('images/confetti-bg.jpg')">
+      </div>
+      <a href="#user"><img class="circle" src="images/castle-home.jpg"></a>
+      <a href="#name"><span class="white-text name">John Doe</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+
+  </ul>
+
+
   <div class="container" style="padding-bottom:27px">
+
+    <h1>Navbar</h1>
+
     <h1>Alerts</h1>
     <div class="row no-gutters ">
 
@@ -106,45 +143,47 @@
       </div>
     </div>
     <h1>Breadcrumb</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Library</li>
-        <li class="breadcrumb-item"><a href="#">Next page</a></li>
-
-      </ol>
-    </nav>
+    <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </div>
+  </nav>
 
     <h1>Buttons</h1>
+    <div class="add-button halfway-fab" >
+      <a href="#">
+      <div class="sub-button tl">
+          Back
+      </div>
+    </a>
+    <a href="#">
+
+      <div class="sub-button tr">
+          Edit
+      </div>
+    </a>
+    <a href="#">
+
+      <div class="sub-button bl">
+          Gwrite
+      </div>
+    </a>
+    <a href="#">
+
+      <div class="sub-button br">
+          Gsync
+      </div>
+    </a>
+
+    </div>
       <a class="btn-floating pulse center"><i class="material-icons">menu</i></a>
       <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
 
-      <div class="add-button" >
-        <a href="#">
-        <div class="sub-button tl">
-            Back
-        </div>
-      </a>
-      <a href="#">
 
-        <div class="sub-button tr">
-            Edit
-        </div>
-      </a>
-      <a href="#">
-
-        <div class="sub-button bl">
-            Gwrite
-        </div>
-      </a>
-      <a href="#">
-
-        <div class="sub-button br">
-            Gsync
-        </div>
-      </a>
-
-      </div>
 
 
     <a href="#" class="btn-fills-red">Red</a>
@@ -188,7 +227,7 @@
       </a>
       <div class="simple-card col-md-4 col-sm-12" style="background-color:#d500f9">
         <div class="card-container">
-          <p class="flow-text" style="color:#ffffff">Simple hoverable card</p>
+          <p class="flow-text" style="color:#ffffff">Simple hover</p>
         </div>
       </div>
       <div class="simple-card col-md-4 col-sm-12" style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
@@ -202,8 +241,8 @@
         </div>
       </div>
       <a href="#" class="col-md-6 col-sm-12 anchor-card">
-        <div class="image-card" style="background-image: url('castle-home.jpg');
-        background-position: center;
+        <div class="image-card" style="background-image: url('images/castle-home.jpg');
+        background-position: center
         background-size: cover">
           <div class="card-container">
             <div>
@@ -219,11 +258,11 @@
 
     <h1>Carousel</h1>
     <div class="carousel col-md-12">
-    <a class="carousel-item" href="#one!"><img src="castle-home.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="castle-home.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="castle-home.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="castle-home.jpg"></a>
-    <a class="carousel-item" href="#five!"><img src="castle-home.jpg"></a>
+    <a class="carousel-item" href="#one!"><img src="images/castle-home.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/castle-home.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="images/castle-home.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="images/castle-home.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="images/castle-home.jpg"></a>
   </div>
 
 
@@ -357,7 +396,7 @@
     <h3>Chips</h3>
     <p>Javascript plugin</p>
     <div class="chip">
-      <img src="castle-home.jpg" alt="Contact Person">
+      <img src="images/castle-home.jpg" alt="Contact Person">
       Chip with image
     </div>
     <div class="chip">
@@ -443,6 +482,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
 
     function toastaction() {
       var toastHTML = '<span>I am toast content</span><a href="#"><button class="toast-action-btn">Undo</button></a>';
@@ -529,7 +571,7 @@
 
   <style media="screen">
     .bgimg {
-      background-image: url("castle-home.jpg");
+      background-image: url("images/castle-home.jpg");
     }
   </style>
 
