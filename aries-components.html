@@ -7,9 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-grid.css" crossorigin="anonymous">
-
   <!-- kalam font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
 
@@ -18,40 +15,60 @@
 
 
   <!-- custom CSS -->
-  <link rel="stylesheet" href="items.css">
-  <link rel="stylesheet" href="forms.css">
-  <link rel="stylesheet" href="materialize.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/aries.css">
+  <link rel="stylesheet" href="css/materialize.css">
 
   <title>danielp's css</title>
 </head>
 
 <body>
+  <nav role="navigation" id="topnav" class="topnav-fixed nav-extended ">
+    <canvas id="top-navbar-granim"></canvas>
 
-
-  <div class="bgimg ">
-    <div class=" display-container">
-      <div class="display-middle" style="color:white">
-        <h1 class="homepage-name center">Homepage</h1>
-        <p class="center">Danielp's custom css :p</p>
-      </div>
-    </div>
-
-  </div>
-
-
-  <nav>
-
-    <div class="nav-wrapper">
-      <a href="#" data-target="slide-out" class="brand-logo sidenav-trigger"><i class="material-icons ">menu</i>Logo</a>
-
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Aries</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <ul>
+            <li>
+              <a href="https://github.com/algebananazzzzz" target="_blank">
+                <!-- <img style="image:url('images/Octocat.jpg')"></img> -->
+                Github
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Quick start</a></li>
+        <li><a href="docs.html">Documentation</a></li>
       </ul>
 
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background" style="background-image: url('images/confetti-bg.jpg'); background-size:cover">
+            </div>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><img class="circle" src="images/castle-home.jpg"></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text name">Danielp's themes</span></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text email">Visit in github</span></a>
+          </div>
+        </li>
+        <li><a class="waves-effect active" href="#!">Main page</a></li>
+        <li><a class="waves-effect" href="#!">Quick start</a></li>
+        <li><a class="waves-effect" href="docs.html">Documentation</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
 
+    <div class="nav-content container">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="aries.html">Home</a></li>
+        <li class="tab"><a href="aries-css.html">CSS</a></li>
+        <li class="tab"><a class="active" href="#">Components</a></li>
+        <li class="tab"><a href="aries-javascript.html">Javascript</a></li>
+        <li class="tab"><a href="aries-forms.html">Forms</a></li>
+      </ul>
+    </div>
 
   </nav>
 
@@ -75,87 +92,159 @@
 
   </ul>
 
+  <div class="bgimg ">
+    <div class=" display-container">
+      <div class="display-middle" style="color:white">
+        <h1 class="homepage-name center">Components</h1>
+        <h5 class="center">Ariesse :p</h5>
+      </div>
+    </div>
 
-  <div class="container" style="padding-bottom:27px">
+  </div>
 
-    <h1>Navbar</h1>
+  <div class="section-large">
+    <div class="row center">
+      <h3 class="light materialize-red-text text-lighten-2">Components</h3>
+      <h6>From alerts to preloaders</h6>
+      <p>Many components... but with the same style. Enjoy :))</p>
+    </div>
+  </div>
+  <div class="divider"></div>
 
-    <h1>Alerts</h1>
-    <div class="row no-gutters ">
+  <div class="container">
 
-      <div class="col-md-12">
-        <div class="alert alert-primary" role="alert">
-          Class: alert-primary, <a href="#" class="alert-link">alert-link</a>.
+    <h3>Alerts</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        This component is not found within the materialize documentations. <a href="#" class="alert-link">See my documentation!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 no-padding">
+        <div class="alert gradient-primary" role="alert">
+          Alert with class of gradient-primary, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-secondary" role="alert">
-          Class: alert-secondary, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-secondary" role="alert">
+          Alert with class of gradient-secondary, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-tertiary" role="alert">
-          Class: alert-tertiary, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-tertiary" role="alert">
+          Alert with class of gradient-tertiary, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-success" role="alert">
-          Class: alert-success, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-success" role="alert">
+          Alert with class of gradient-success, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-danger" role="alert">
-          Class: alert-danger, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-danger" role="alert">
+          Alert with class of gradient-danger, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-warning" role="alert">
-          Class: alert-warning, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-warning" role="alert">
+          Alert with class of gradient-warning, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-info" role="alert">
-          Class: alert-info, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-info" role="alert">
+          Alert with class of gradient-info, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-light" role="alert">
-          Class: alert-light, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-light" role="alert">
+          Alert with class of gradient-light, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
-      <div class="col-md-12">
-        <div class="alert alert-dark" role="alert">
-          Class: alert-dark, <a href="#" class="alert-link">alert-link</a>.
+      <div class="col s12 no-padding">
+        <div class="alert gradient-dark" role="alert">
+          Alert with class of gradient-dark, <a href="#" class="alert-link">alert-link</a>.
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <div class="col s12 m6 l6 no-padding">
+        <div class="alert gradient-warning alert-dismissible fade show" role="alert">
           <strong>Dismissable alert: </strong>Click on close to close
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="alert alert-success" role="alert">
+
+      <div class="col s12 m6 l6 no-padding">
+        <div class="alert gradient-success" role="alert">
           <h4 class="alert-heading">Alert heading</h4>
-          <p>content 1</p>
-          <hr>
-          <p class="mb-0">content 2</p>
+          <p>Title</p>
+          <div class="divider">
+          </div>
+          <p>Content of this alert. Do you know that Aries is located in the Northern Hemisphere between Pisces to its west and Taurus to its east? The best view of Aries occurs on December nights around 9 p.m. local time.
+          </p>
         </div>
       </div>
     </div>
-    <h1>Breadcrumb</h1>
+
+    <h3>Badges</h3>
+    <h3>Buttons</h3>
+    <h3>Breadcrumbs</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        You may have to add a "padding-left" style for better presentation. <a href="https://materializecss.com/breadcrumbs.html" class="alert-link">See the documentations!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper gradient-primary" style="padding-left:15px">
         <div class="col s12">
-          <a href="#!" class="breadcrumb">First</a>
-          <a href="#!" class="breadcrumb">Second</a>
-          <a href="#!" class="breadcrumb">Third</a>
+          <a href="#!" class="breadcrumb">Home</a>
+          <a href="#!" class="breadcrumb">Aries theme</a>
+          <a href="#!" class="breadcrumb">Components</a>
+          <a href="#!" class="breadcrumb">Breadcrumbs</a>
         </div>
       </div>
     </nav>
+
+    <h3>Cards</h3>
+    <h3>Collections</h3>
+    <h3>Floating action buttons</h3>
+    <h3>Footer</h3>
+    <h3>Icons</h3>
+    <h3>Navbar</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        There are further instructions required for the component to work completely. <a href="#" class="alert-link">See my documentation!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="topnav">
+      <canvas id="canvas-basic" width="300" height="300"></canvas>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Navbar</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h3>Pagination</h3>
+    <h3>Preloader</h3>
+
+
 
     <h1>Buttons</h1>
     <div class="add-button halfway-fab">
@@ -222,29 +311,29 @@
     <h1>Card</h1>
     <div class="row">
 
-      <a href="#" class="col-md-4 col-sm-12 anchor-card">
+      <a href="#" class="col s12 m4 l4  anchor-card">
         <div class="simple-card-hover-off pulse" style="background-color:#ff1744; width:100%">
           <div class="card-container">
             <p class="flow-text" style="color:#ffffff">Card with no hover</p>
           </div>
         </div>
       </a>
-      <div class="simple-card col-md-4 col-sm-12" style="background-color:#d500f9">
+      <div class="simple-card col s12 m6 l4 " style="background-color:#d500f9">
         <div class="card-container">
           <p class="flow-text" style="color:#ffffff">Simple hover</p>
         </div>
       </div>
-      <div class="simple-card col-md-4 col-sm-12" style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
+      <div class="simple-card col s12 m6 l4 " style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
         <div class="card-container">
           <p class="flow-text" style="color:#ffffff">Add a gradient?</p>
         </div>
       </div>
-      <div class="simple-card-hover-off col-md-12 col-sm-12 bounce" style="background-color:#651fff; height: 5vw;">
+      <div class="simple-card-hover-off col s12  bounce" style="background-color:#651fff; height: 5vw;">
         <div class="card-container">
           <p class="flow-text" style="color:#ffffff; font-size:15px">Vary card dimension by varying vw of height (width:20vw)</p>
         </div>
       </div>
-      <a href="#" class="col-md-6 col-sm-12 anchor-card">
+      <a href="#" class="col s12 m6 l6  anchor-card">
         <div class="image-card" style="background-image: url('images/castle-home.jpg');
         background-position: center
         background-size: cover">
@@ -261,7 +350,7 @@
     </div>
 
     <h1>Carousel</h1>
-    <div class="carousel col-md-12">
+    <div class="carousel col s12">
       <a class="carousel-item" href="#one!"><img src="images/castle-home.jpg"></a>
       <a class="carousel-item" href="#two!"><img src="images/castle-home.jpg"></a>
       <a class="carousel-item" href="#three!"><img src="images/castle-home.jpg"></a>
@@ -302,48 +391,48 @@
     </div>
     <h1>Forms</h1>
     <h3>Input</h3>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input placeholder="Placeholder" id="first_name" type="text" class="validate">
       <label for="first_name">First Name</label>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input id="last_name" type="text" class="validate">
       <label for="last_name">Last Name</label>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input disabled value="I am not editable" id="disabled" type="text" class="validate">
       <label for="disabled">Disabled</label>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input id="password" type="password" class="validate">
       <label for="password">Password</label>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input id="email" type="email" class="validate">
       <label for="email">Email</label>
     </div>
 
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input value="Value" id="first_name2" type="text" class="validate">
       <label class="active" for="first_name2">First Name</label>
     </div>
 
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <i class="material-icons prefix">account_circle</i>
       <input id="icon_prefix" type="text" class="validate">
       <label for="icon_prefix">First Name</label>
     </div>
-    <div class="input-field col-md-12 ">
+    <div class="input-field ">
       <i class="material-icons prefix">phone</i>
       <input id="icon_telephone" type="tel" class="validate">
       <label for="icon_telephone">Telephone</label>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input id="email2" type="email" class="validate">
       <label for="email2">Email</label>
       <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <textarea id="textarea1" class="materialize-textarea"></textarea>
       <label for="textarea1">Textarea</label>
     </div>
@@ -354,7 +443,7 @@
         <input class="file-path validate" type="text" placeholder="Upload files">
       </div>
     </div>
-    <div class="input-field col-md-12">
+    <div class="input-field">
       <input id="input_text" type="text" data-length="10">
       <label for="input_text">Input text</label>
     </div>
@@ -385,12 +474,12 @@
         <span>Filled in</span>
       </label>
     </p>
-    <!-- <p>
-        <label>
-          <input id="indeterminate-checkbox" type="checkbox" />
-          <span>Indeterminate Style</span>
-        </label>
-      </p> -->
+    <p>
+      <label>
+        <input id="indeterminate-checkbox" type="checkbox" />
+        <span>Indeterminate Style</span>
+      </label>
+    </p>
     <p>
       <label>
         <input type="checkbox" disabled="disabled" />
@@ -415,7 +504,7 @@
     </div>
 
     <h3>Picker</h3>
-    <!-- <input type="text" class="datepicker"> -->
+    <input type="text" class="datepicker">
 
     <h3>Range</h3>
 
@@ -454,9 +543,9 @@
       <div class="indeterminate"></div>
     </div>
     <h1>Toasts</h1>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-primary'})" class="btn" style="background-color:#f50057">Toast!</a>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-danger'})" class="btn" style="background-color:#d500f9">Change colors</a>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'alert-success', displayLength:300})" class="btn" style="background-color:#651fff">Change duration</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-primary'})" class="btn" style="background-color:#f50057">Toast!</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-danger'})" class="btn" style="background-color:#d500f9">Change colors</a>
+    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-success', displayLength:300})" class="btn" style="background-color:#651fff">Change duration</a>
     <a class="btn" onclick="M.toast({html: 'I am a toast', completeCallback: function(){alert('Your toast was dismissed')}})" style="background-color:#651fff">With callback</a>
     <a onclick="toastaction()" class="btn" style="background-color:#651fff">Change duration</a>
     <h1>Badges</h1>
@@ -468,15 +557,16 @@
 
 
   <div class="bottom-navbar-wrapper">
+
     <canvas id="bottom-navbar-granim"></canvas>
     <div class="bottom-navbar-list">
-      <a href="#default-state" id="default-state-cta" style="width:33.33333%" class="bottom-navbar-element">Home</a>
-      <a href="#violet-state" id="violet-state-cta" style="width:33.33333%" class="bottom-navbar-element">Click for a surprise :)</a>
-      <a href="#orange-state" id="orange-state-cta" style="width:33.33333%" class="bottom-navbar-element">Wow its cool rite!!</a>
-      <!-- <a href="#default-state" id="default-state-cta" class="active">Default state</a>
-      <a href="#violet-state" id="violet-state-cta">Violet state</a>
-      <a href="#orange-state" id="orange-state-cta">Orange state</a> -->
+      <a href="#" id="default-state-cta" style="width:33.33333%" class="bottom-navbar-element">Aries</a>
+      <a href="#violet-state" id="violet-state-cta" style="width:33.33333%" class="bottom-navbar-element">Carina</a>
+      <a href="#orange-state" id="orange-state-cta" style="width:33.33333%" class="bottom-navbar-element">Draco</a>
     </div>
+  </div>
+  <div class="botnav-offset">
+
   </div>
 
   <!-- Optional JavaScript -->
@@ -484,96 +574,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.sidenav').sidenav();
-    });
-
-    function toastaction() {
-      var toastHTML = '<span>I am toast content</span><a href="#"><button class="toast-action-btn">Undo</button></a>';
-      M.toast({
-        html: toastHTML
-      });
-    }
-
-    var granimInstance = new Granim({
-      element: '#bottom-navbar-granim',
-      name: 'bottom-navbar-granim',
-      elToSetClassOn: '.bottom-navbar-wrapper',
-      direction: 'diagonal',
-      isPausedWhenNotInView: true,
-      stateTransitionSpeed: 500,
-      states: {
-        "default-state": {
-          gradients: [
-            ['#B3FFAB', '#12FFF7'],
-            ['#ADD100', '#7B920A'],
-            ['#1A2980', '#26D0CE']
-          ],
-          transitionSpeed: 7500
-        },
-        "violet-state": {
-          gradients: [
-            ['#9D50BB', '#6E48AA'],
-            ['#4776E6', '#8E54E9']
-          ],
-          transitionSpeed: 1750
-        },
-        "orange-state": {
-          gradients: [
-            ['#FF4E50', '#F9D423']
-          ],
-          loop: false
-        }
-      }
-    });
+  <script src="js/aries-components.js" charset="utf-8"></script>
 
 
-
-
-    // With jQuery
-    $('#default-state-cta').on('click', function(event) {
-      event.preventDefault();
-      granimInstance.changeState('default-state');
-      setClass('#default-state-cta')
-    });
-    $('#violet-state-cta').on('click', function(event) {
-      event.preventDefault();
-      granimInstance.changeState('violet-state');
-      setClass('#violet-state-cta')
-    });
-    $('#orange-state-cta').on('click', function(event) {
-      event.preventDefault();
-      granimInstance.changeState('orange-state');
-      setClass('#orange-state-cta')
-    });
-
-    function setClass(element) {
-      $('.canvas-interactive-wrapper a').removeClass('active');
-      $(element).addClass('active');
-    };
-
-    $('.chips').chips();
-    $('.chips-initial').chips({
-      data: [{
-        tag: 'Apple',
-      }, {
-        tag: 'Microsoft',
-      }, {
-        tag: 'Google',
-      }],
-    });
-    $(document).ready(function() {
-      $('.datepicker').datepicker();
-    });
-    $(document).ready(function() {
-      $('input#input_text, textarea#textarea2').characterCounter();
-    });
-    $(document).ready(function() {
-      $('.carousel').carousel();
-    });
-  </script>
 
   <style media="screen">
     .bgimg {
