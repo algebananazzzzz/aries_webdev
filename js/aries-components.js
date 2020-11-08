@@ -1,29 +1,54 @@
 $(document).ready(function() {
   $('.sidenav').sidenav();
 });
-
-function toastaction() {
-  var toastHTML = '<span>I am toast content</span><a href="#"><button class="toast-action-btn">Undo</button></a>';
-  M.toast({
-    html: toastHTML
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems, {
+    direction: 'left'
   });
-}
+});
+
+
+$('.canvas-basic').each(function() {
+  new Granim({
+    element: this,
+    direction: 'left-right',
+    isPausedWhenNotInView: true,
+    states: {
+      "default-state": {
+        gradients: [
+          ['#ff9966', '#ff5e62'],
+          ['#00F260', '#0575E6'],
+          ['#e1eec3', '#f05053']
+        ]
+      }
+    }
+  });
+});
+
 new Granim({
-  element: '#canvas-basic',
-  direction: 'left-right',
+  element: '#canvas-image-blending',
+  direction: 'top-bottom',
   isPausedWhenNotInView: true,
+  image: {
+    source: 'images/castle-home.jpg',
+    stretchMode: ['stretch', 'stretch'],
+    blendingMode: 'screen'
+  },
   states: {
     "default-state": {
       gradients: [
-        ['#ff9966', '#ff5e62'],
-        ['#00F260', '#0575E6'],
-        ['#e1eec3', '#f05053']
-      ]
+        ['#29323c', '#485563'],
+        ['#FF6B6B', '#556270'],
+        ['#80d3fe', '#7ea0c4'],
+        ['#f0ab51', '#eceba3']
+      ],
+      transitionSpeed: 7000
     }
   }
 });
 new Granim({
-  element: '#top-navbar-granim',
+  element: '#canvas-preloader',
   direction: 'left-right',
   isPausedWhenNotInView: true,
   states: {
@@ -32,41 +57,12 @@ new Granim({
         ['#ff9966', '#ff5e62'],
         ['#00F260', '#0575E6'],
         ['#e1eec3', '#f05053']
-      ]
-    }
-  }
-});
-new Granim({
-  element: '#bottom-navbar-granim',
-  direction: 'left-right',
-  isPausedWhenNotInView: true,
-  states: {
-    "default-state": {
-      gradients: [
-        ['#ff9966', '#ff5e62'],
-        ['#00F260', '#0575E6'],
-        ['#e1eec3', '#f05053']
-      ]
+      ],
+      transitionSpeed: 1200
     }
   }
 });
 
-$('.chips').chips();
-$('.chips-initial').chips({
-  data: [{
-    tag: 'Apple',
-  }, {
-    tag: 'Microsoft',
-  }, {
-    tag: 'Google',
-  }],
-});
 $(document).ready(function() {
-  $('.datepicker').datepicker();
-});
-$(document).ready(function() {
-  $('input#input_text, textarea#textarea2').characterCounter();
-});
-$(document).ready(function() {
-  $('.carousel').carousel();
+  $('#card-tab').tabs();
 });

@@ -25,8 +25,7 @@
 
 <body>
   <nav role="navigation" id="topnav" class="topnav-fixed nav-extended ">
-    <canvas id="top-navbar-granim"></canvas>
-
+    <canvas class="canvas-basic"></canvas>
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Aries</a>
       <ul class="right hide-on-med-and-down">
         <li>
@@ -69,7 +68,6 @@
         <li class="tab"><a href="aries-forms.html">Forms</a></li>
       </ul>
     </div>
-
   </nav>
 
   <ul id="slide-out" class="sidenav">
@@ -94,7 +92,7 @@
 
   <div class="bgimg ">
     <div class=" display-container">
-      <div class="display-middle" style="color:white">
+      <div class="display-middle white-text">
         <h1 class="homepage-name center">Components</h1>
         <h5 class="center">Ariesse :p</h5>
       </div>
@@ -125,61 +123,45 @@
 
     <div class="row">
       <div class="col s12 no-padding">
+        <div class="alert canvas-wrapper" role="alert">
+          <canvas class="canvas-basic"></canvas>
+          <p class="cta-wrapper white-text"> Alert with canvas wrapper, <a href="#" class="alert-link">alert-link</a>.
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m6 no-padding">
+
         <div class="alert gradient-primary" role="alert">
           Alert with class of gradient-primary, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
+
         <div class="alert gradient-secondary" role="alert">
           Alert with class of gradient-secondary, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-tertiary" role="alert">
           Alert with class of gradient-tertiary, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-success" role="alert">
           Alert with class of gradient-success, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-danger" role="alert">
           Alert with class of gradient-danger, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-warning" role="alert">
           Alert with class of gradient-warning, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-info" role="alert">
           Alert with class of gradient-info, <a href="#" class="alert-link">alert-link</a>.
         </div>
+
       </div>
-      <div class="col s12 no-padding">
+      <div class="col s12 m6  no-padding">
         <div class="alert gradient-light" role="alert">
           Alert with class of gradient-light, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-      <div class="col s12 no-padding">
         <div class="alert gradient-dark" role="alert">
           Alert with class of gradient-dark, <a href="#" class="alert-link">alert-link</a>.
         </div>
-      </div>
-
-      <div class="col s12 m6 l6 no-padding">
-        <div class="alert gradient-warning alert-dismissible fade show" role="alert">
-          <strong>Dismissable alert: </strong>Click on close to close
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l6 no-padding">
         <div class="alert gradient-success" role="alert">
           <h4 class="alert-heading">Alert heading</h4>
           <p>Title</p>
@@ -188,11 +170,63 @@
           <p>Content of this alert. Do you know that Aries is located in the Northern Hemisphere between Pisces to its west and Taurus to its east? The best view of Aries occurs on December nights around 9 p.m. local time.
           </p>
         </div>
+
+        <div class="alert gradient-warning alert-dismissible fade show" role="alert">
+          <strong>Dismissable alert: </strong>Click on close to close
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div>
+
+
     </div>
 
     <h3>Badges</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        Simply include the class and canvas to enable granim effect. <a href="#" class="alert-link">Here's how to!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="new badge left gradient-primary">8</span>
+      <span class="new badge left gradient-primary" data-badge-caption="gradient background">4</span>
+      <span class="new badge left canvas-wrapper" data-badge-caption="granim canvas">
+        <canvas class="canvas-basic" width="300" height="300"></canvas>
+        4</span>
+    </div>
+
     <h3>Buttons</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        Simply include the class and canvas to enable granim effect. <a href="#" class="alert-link">Here's how to!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6">
+        <a class="waves-effect waves-light btn gradient-primary">button</a>
+        <a class="waves-effect waves-light btn gradient-primary"><i class="material-icons left">cloud</i>Gradiented button</a>
+        <a class="waves-effect btn gradient-primary"><i class="material-icons right">cloud</i>button</a>
+        <a class="btn-floating btn-large waves-effect waves-light gradient-primary"><i class="cta-wrapper material-icons">add</i></a>
+      </div>
+      <div class="col s12 m6">
+        <a class="waves-effect btn canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          Button with granim</a>
+        <a class="waves-effect btn-floating btn-large btn canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          <i class="cta-wrapper material-icons">add</i></a>
+      </div>
+    </div>
+
     <h3>Breadcrumbs</h3>
     <div class="row">
       <div class="alert gradient-info alert-dismissible fade show" role="alert">
@@ -203,8 +237,9 @@
       </div>
     </div>
 
-    <nav>
-      <div class="nav-wrapper gradient-primary" style="padding-left:15px">
+    <nav id="topnav">
+      <canvas class="canvas-basic opacity-off"></canvas>
+      <div class="nav-wrapper" style="padding-left:15px">
         <div class="col s12">
           <a href="#!" class="breadcrumb">Home</a>
           <a href="#!" class="breadcrumb">Aries theme</a>
@@ -215,10 +250,148 @@
     </nav>
 
     <h3>Cards</h3>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel center padding-8 canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          <h4 class="white-text">Granim and gradient cards
+          </h4>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card gradient-primary">
+          <div class="card-content">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+
+        <div class="card canvas-wrapper">
+          <canvas class="canvas-basic"></canvas>
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-tabs">
+            <ul id="card-tab" class="tabs tabs-transparent tabs-fixed-width">
+              <li class="tab"><a href="#test1">Test 1</a></li>
+              <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test3">Test 3</a></li>
+            </ul>
+          </div>
+
+          <div class="card-content grey lighten-4">
+            <div id="test1">Test 1</div>
+            <div id="test2">Test 2</div>
+            <div id="test3">Test 3</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect canvas-wrapper">
+            <canvas class=" activator" id="canvas-image-blending" style="z-index:1"></canvas>
+            <img class="activator" src="images/castle-home.jpg">
+
+            <span class="card-title activator white-text ">Image</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <h3>Collections</h3>
+    <div class="row">
+      <div class="col s12 m6">
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Granim</h4>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-info-text">send</i></a></div>
+          </li>
+          <li class="collection-item canvas-wrapper">
+            <canvas class="canvas-basic"></canvas>
+            <div class="white-text">Alvin<a href="#!" class="secondary-content"><i class="material-icons white-text">send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-warning-text">
+                  send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-secondary-text">send</i></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
     <h3>Floating action buttons</h3>
+    <div class="row">
+      <div class="col s12 m12 l6">
+        <h6>Granim</h6>
+        <div class="fixed-action-btn right" style="position:relative">
+          <a class="btn-floating btn-large canvas-wrapper">
+            <canvas class="canvas-basic"></canvas>
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating gradient-primary">
+                <i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating gradient-secondary">
+                <i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating gradient-tertiary">
+                <i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating canvas-wrapper"> <canvas class="canvas-basic"></canvas>
+                <i class="material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <h3>Footer</h3>
-    <h3>Icons</h3>
+
+    <footer class="page-footer canvas-wrapper">
+      <canvas class="canvas-basic" width="300" height="300"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Granim footer</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
     <h3>Navbar</h3>
     <div class="row">
       <div class="alert gradient-info alert-dismissible fade show" role="alert">
@@ -230,7 +403,7 @@
     </div>
 
     <nav id="topnav">
-      <canvas id="canvas-basic" width="300" height="300"></canvas>
+      <canvas class="canvas-basic"></canvas>
       <div class="nav-wrapper container">
         <a href="#" class="brand-logo">Navbar</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -241,324 +414,48 @@
       </div>
     </nav>
 
-    <h3>Pagination</h3>
     <h3>Preloader</h3>
 
-
-
-    <h1>Buttons</h1>
-    <div class="add-button halfway-fab">
-      <a href="#">
-        <div class="sub-button tl">
-          Back
-        </div>
-      </a>
-      <a href="#">
-
-        <div class="sub-button tr">
-          Edit
-        </div>
-      </a>
-      <a href="#">
-
-        <div class="sub-button bl">
-          Gwrite
-        </div>
-      </a>
-      <a href="#">
-
-        <div class="sub-button br">
-          Gsync
-        </div>
-      </a>
-
-    </div>
-    <a class="btn-floating pulse center"><i class="material-icons">menu</i></a>
-    <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
-
-
-
-
-    <a href="#" class="btn-fills-red">Red</a>
-    <a href="#" class="btn-fills-purple">Purple</a>
-    <a href="#" class="btn-fills-indigo">Indigo</a>
-    <a href="#" class="btn-fills">Default</a>
-    <a href="#" class="btn-fills-blue">Blue</a>
-    <a href="#" class="btn-fills-lightblue">Light blue</a>
-    <a href="#" class="btn-fills-cyan bounce">Cyan bouncy</a>
-    <a href="#" class="btn-fills-teal">Teal</a>
-    <a href="#" class="btn-fills-green pulse">Green</a>
-    <a href="#" class="btn-fills-lightgreen">Light green</a>
-    <a href="#" class="btn-fills-lime">Lime</a>
-    <a href="#" class="btn-fills-yellow">Yellow</a>
-    <a href="#" class="btn-fills-amber">Amber</a>
-    <a href="#" class="btn-fills-orange">Orange</a>
-    <a href="#" class="btn-fills-deeporange">Deep orange</a>
-
-    <br>
-    <a href="#" class="btn" style="background-color:#f50057">Classic buttons<i class="material-icons right">send</i>
-    </a>
-    <a href="#" class="btn pulse" style="background-color:#d500f9">You</a>
-    <a href="#" class="btn" style="background-color:#651fff">Can</a>
-    <a href="#" class="btn bounce" style="background-color:#3d5afe">Change</a>
-    <a href="#" class="btn" style="background-color:#2979ff">The</a>
-    <a href="#" class="btn bounce" style="background-color:#00b0ff">Colors</a>
-    <a href="#" class="btn" style="background-color:#00e5ff">Yay!!</a>
-
-
-
-
-    <h1>Card</h1>
-    <div class="row">
-
-      <a href="#" class="col s12 m4 l4  anchor-card">
-        <div class="simple-card-hover-off pulse" style="background-color:#ff1744; width:100%">
-          <div class="card-container">
-            <p class="flow-text" style="color:#ffffff">Card with no hover</p>
-          </div>
-        </div>
-      </a>
-      <div class="simple-card col s12 m6 l4 " style="background-color:#d500f9">
-        <div class="card-container">
-          <p class="flow-text" style="color:#ffffff">Simple hover</p>
-        </div>
-      </div>
-      <div class="simple-card col s12 m6 l4 " style="background: linear-gradient(90deg, rgba(213, 0, 249, 1) 0%, rgba(61, 90, 254, 1) 50%, rgba(0, 229, 255, 1) 100%)">
-        <div class="card-container">
-          <p class="flow-text" style="color:#ffffff">Add a gradient?</p>
-        </div>
-      </div>
-      <div class="simple-card-hover-off col s12  bounce" style="background-color:#651fff; height: 5vw;">
-        <div class="card-container">
-          <p class="flow-text" style="color:#ffffff; font-size:15px">Vary card dimension by varying vw of height (width:20vw)</p>
-        </div>
-      </div>
-      <a href="#" class="col s12 m6 l6  anchor-card">
-        <div class="image-card" style="background-image: url('images/castle-home.jpg');
-        background-position: center
-        background-size: cover">
-          <div class="card-container">
-            <div>
-              <p class="image-card-name">Image card</p>
-              <p class="image-card-caption">Caption</p>
-            </div>
-
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <h1>Carousel</h1>
-    <div class="carousel col s12">
-      <a class="carousel-item" href="#one!"><img src="images/castle-home.jpg"></a>
-      <a class="carousel-item" href="#two!"><img src="images/castle-home.jpg"></a>
-      <a class="carousel-item" href="#three!"><img src="images/castle-home.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="images/castle-home.jpg"></a>
-      <a class="carousel-item" href="#five!"><img src="images/castle-home.jpg"></a>
-    </div>
-
-
-
-
-    <h1>Modal</h1>
-
-
-    <!-- Modal -->
-    <a href="#" class="btn-fills" data-toggle="modal" data-target="#staticBackdrop">
-      Launch static backdrop modal
-    </a>
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="staticBackdropLabel">Modal title</h2>
-            <button type="button" class="close waves-effect" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            You can only press close to exit
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn" style="background-color:#f50057" data-dismiss="modal">Close</a>
-            <a href="#" class="btn-fills">Understood</a>
-          </div>
-        </div>
+    <div class="progress grey lighten-2">
+      <div class="determinate" style="width: 70%"> <canvas class="canvas-basic"></canvas>
       </div>
     </div>
-    <h1>Forms</h1>
-    <h3>Input</h3>
-    <div class="input-field">
-      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-      <label for="first_name">First Name</label>
-    </div>
-    <div class="input-field">
-      <input id="last_name" type="text" class="validate">
-      <label for="last_name">Last Name</label>
-    </div>
-    <div class="input-field">
-      <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-      <label for="disabled">Disabled</label>
-    </div>
-    <div class="input-field">
-      <input id="password" type="password" class="validate">
-      <label for="password">Password</label>
-    </div>
-    <div class="input-field">
-      <input id="email" type="email" class="validate">
-      <label for="email">Email</label>
+    <div class="progress transparent-bg">
+      <canvas id="canvas-preloader"></canvas>
     </div>
 
-    <div class="input-field">
-      <input value="Value" id="first_name2" type="text" class="validate">
-      <label class="active" for="first_name2">First Name</label>
-    </div>
-
-    <div class="input-field">
-      <i class="material-icons prefix">account_circle</i>
-      <input id="icon_prefix" type="text" class="validate">
-      <label for="icon_prefix">First Name</label>
-    </div>
-    <div class="input-field ">
-      <i class="material-icons prefix">phone</i>
-      <input id="icon_telephone" type="tel" class="validate">
-      <label for="icon_telephone">Telephone</label>
-    </div>
-    <div class="input-field">
-      <input id="email2" type="email" class="validate">
-      <label for="email2">Email</label>
-      <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-    </div>
-    <div class="input-field">
-      <textarea id="textarea1" class="materialize-textarea"></textarea>
-      <label for="textarea1">Textarea</label>
-    </div>
-    <div class="file-field input-field">
-      <a class="btn" style="background-color:#f50057">File</a>
-      <input type="file">
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text" placeholder="Upload files">
-      </div>
-    </div>
-    <div class="input-field">
-      <input id="input_text" type="text" data-length="10">
-      <label for="input_text">Input text</label>
-    </div>
-
-    <h3>Checkboxes</h3>
-    <p>
-      <label>
-        <input type="checkbox" />
-        <span>Unchecked</span>
-      </label>
-
-    </p>
-    <p>
-      <label class="bounce">
-        <input type="checkbox" />
-        <span>Bouncy</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input type="checkbox" checked="checked" />
-        <span>Checked</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input type="checkbox" class="filled-in" checked="checked" />
-        <span>Filled in</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input id="indeterminate-checkbox" type="checkbox" />
-        <span>Indeterminate Style</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input type="checkbox" disabled="disabled" />
-        <span>Disabled</span>
-      </label>
-    </p>
-    <h3>Chips</h3>
-    <p>Javascript plugin</p>
-    <div class="chip">
-      <img src="images/castle-home.jpg" alt="Contact Person">
-      Chip with image
-    </div>
-    <div class="chip">
-      Tag
-      <i class="close material-icons">close</i>
-    </div>
-    <div class="chip">
-      Tag with icon
-      <i class="close material-icons">attachment</i>
-    </div>
-    <div class="chips chips-initial">
-    </div>
-
-    <h3>Picker</h3>
-    <input type="text" class="datepicker">
-
-    <h3>Range</h3>
-
-    <form action="#">
-      <p class="range-field">
-        <input type="range" min="0" value="30" max="100" />
-      </p>
-    </form>
-    <h3>Select</h3>
-
-    <label>Browser Select</label>
-    <select class="browser-default col-md-3">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <h1>Pagination</h1>
-    <ul class="pagination center">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active pulse"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#2">2</a></li>
-      <li class="waves-effect bounce"><a href="#3">3</a></li>
-      <li class="waves-effect"><a href="#4">4</a></li>
-      <li class="waves-effect"><a href="#5">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>
-
-    <h1>Range/progress</h1>
-    <p>Determinate</p>
-    <div class="progress">
-      <div class="determinate" style="width: 70%"></div>
-    </div>
-    <p>Indeterminate</p>
-    <div class="progress">
-      <div class="indeterminate"></div>
-    </div>
-    <h1>Toasts</h1>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-primary'})" class="btn" style="background-color:#f50057">Toast!</a>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-danger'})" class="btn" style="background-color:#d500f9">Change colors</a>
-    <a onclick="M.toast({html: 'I am a toast', classes: 'gradient-success', displayLength:300})" class="btn" style="background-color:#651fff">Change duration</a>
-    <a class="btn" onclick="M.toast({html: 'I am a toast', completeCallback: function(){alert('Your toast was dismissed')}})" style="background-color:#651fff">With callback</a>
-    <a onclick="toastaction()" class="btn" style="background-color:#651fff">Change duration</a>
-    <h1>Badges</h1>
-    <h1>Collections</h1>
-    <h1>Floating action button</h1>
-    <h1>Footer</h1>
-    <h1></h1>
   </div>
 
+  <footer class="page-footer canvas-wrapper">
+    <canvas class="canvas-basic" width="300" height="300"></canvas>
+    <div class="cta-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s12">
+            <h5 class="white-text">Ariesse</h5>
+            <h6>Simplicity, clarity, versatility</h6>
+          </div>
+
+          <div class="col l4 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="https://github.com/algebananazzzzz" target="_blank">Github</a></li>
+              <li><a class="white-text" href="https://mail.google.com/mail/?view=cm&fs=1&to=danielp-devs@gmail.com" target="_blank">Email (No spams please)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="white-text text-lighten-3" href="https://github.com/algebananazzzzz" target="_blank">algebananazzzzz</a>, adapted from <a class="white-text text-lighten-3" href="https://materializecss.com" target="_blank">Materialize</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div class="bottom-navbar-wrapper">
 
-    <canvas id="bottom-navbar-granim"></canvas>
+    <canvas class="canvas-basic"></canvas>
     <div class="bottom-navbar-list">
       <a href="#" id="default-state-cta" style="width:33.33333%" class="bottom-navbar-element">Aries</a>
       <a href="#violet-state" id="violet-state-cta" style="width:33.33333%" class="bottom-navbar-element">Carina</a>
