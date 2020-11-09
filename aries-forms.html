@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- kalam font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+
+  <!-- material icons stylesheet -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/aries.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/dark.css">
+
+  <title>danielp's css</title>
+</head>
+
+<body>
+  <nav role="navigation" id="topnav" class="topnav-fixed nav-extended ">
+    <canvas class="canvas-basic"></canvas>
+
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Aries</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <ul>
+            <li>
+              <a href="https://github.com/algebananazzzzz" target="_blank">
+                <!-- <img style="image:url('images/Octocat.jpg')"></img> -->
+                Github
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Quick start</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background" style="background-image: url('images/confetti-bg.jpg'); background-size:cover">
+            </div>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><img class="circle" src="images/castle-home.jpg"></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text name">Danielp's themes</span></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text email">Visit in github</span></a>
+          </div>
+        </li>
+        <li><a class="waves-effect active" href="#!">Main page</a></li>
+        <li><a class="waves-effect" href="#!">Quick start</a></li>
+        <li><a class="waves-effect" href="docs.html">Documentation</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+
+    <div class="nav-content container">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="aries.html">Home</a></li>
+        <li class="tab"><a href="aries-css.html">CSS</a></li>
+        <li class="tab"><a href="aries-components.html">Components</a></li>
+        <li class="tab"><a href="aries-javascript.html">Javascript</a></li>
+        <li class="tab"><a class="active" href="#">Forms</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background" style="background-image: url('images/confetti-bg.jpg')">
+        </div>
+        <a href="#user"><img class="circle" src="images/castle-home.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+
+  </ul>
+
+  <div class="bgimg ">
+    <div class=" display-container">
+      <div class="display-middle white-text">
+        <h1 class="homepage-name center">Forms</h1>
+        <h5 class="center">Ariesse :p</h5>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-large">
+    <div class="row center">
+      <h3 class="light materialize-red-text text-lighten-2">Forms</h3>
+      <h6>From Autocompletes to Text inputs</h6>
+      <p>Many forms... but with the same style. Enjoy :))</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="container">
+    <h3>Checkboxes</h3>
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>Unchecked</span>
+      </label>
+    </p>
+    <p>
+      <label class="bounce">
+        <input type="checkbox" />
+        <span>Bouncy</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" />
+        <span>Checked</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id="indeterminate-checkbox" type="checkbox" />
+        <span>Indeterminate Style</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" disabled="disabled" />
+        <span>Disabled</span>
+      </label>
+    </p>
+
+    <h3>Chips</h3>
+    <p>Javascript plugin</p>
+    <div class="chip">
+      <img src="images/castle-home.jpg" alt="Contact Person">
+      Chip with image
+    </div>
+    <div class="chip">
+      Tag
+      <i class="close material-icons">close</i>
+    </div>
+    <div class="chip">
+      Tag with icon
+      <i class="close material-icons">attachment</i>
+    </div>
+    <div class="chips chips-initial">
+    </div>
+
+    <h3>Picker</h3>
+    <div class="input-field">
+      <input id="datepicker" type="text" class="datepicker">
+      <label for="datepicker">Birthday</label>
+    </div>
+    <div class="input-field">
+      <input id="timepicker" type="text" class="timepicker">
+      <label for="timepicker">Time of creation</label>
+    </div>
+
+    <h3>Range</h3>
+
+    <form action="#">
+      <p class="range-field">
+        <input type="range" min="0" value="30" max="100" />
+      </p>
+    </form>
+    <h3>Select</h3>
+
+    <label>Browser Select</label>
+    <select class="browser-default col-md-3">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+
+
+    <h3>Switches</h3>
+    <div class="switch">
+      <label>
+        Off
+        <input type="checkbox" checked>
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
+
+    <div class="switch">
+      <label>
+        Off
+        <input disabled type="checkbox">
+        <span class="lever"></span>
+        On
+      </label>
+    </div>
+
+    <h3>Text Input</h3>
+    <div class="input-field">
+      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+      <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field">
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Last Name</label>
+    </div>
+    <div class="input-field">
+      <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+      <label for="disabled">Disabled</label>
+    </div>
+    <div class="input-field">
+      <input id="password" type="password" class="validate">
+      <label for="password">Password</label>
+    </div>
+    <div class="input-field">
+      <input id="email" type="email" class="validate">
+      <label for="email">Email</label>
+    </div>
+
+    <div class="input-field">
+      <input value="Value" id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">First Name</label>
+    </div>
+
+    <div class="input-field">
+      <i class="material-icons prefix">account_circle</i>
+      <input id="icon_prefix" type="text" class="validate">
+      <label for="icon_prefix">First Name</label>
+    </div>
+    <div class="input-field ">
+      <i class="material-icons prefix">phone</i>
+      <input id="icon_telephone" type="tel" class="validate">
+      <label for="icon_telephone">Telephone</label>
+    </div>
+    <div class="input-field">
+      <input id="email2" type="email" class="validate">
+      <label for="email2">Email</label>
+      <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+    </div>
+    <div class="input-field">
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1">Textarea</label>
+    </div>
+    <div class="file-field input-field">
+      <a class="btn">File</a>
+      <input type="file">
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload files">
+      </div>
+    </div>
+    <div class="input-field">
+      <input id="input_text" type="text" data-length="10">
+      <label for="input_text">Input text</label>
+    </div>
+
+  </div>
+
+  <footer class="page-footer canvas-wrapper">
+    <canvas class="canvas-basic" width="300" height="300"></canvas>
+    <div class="cta-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s12">
+            <h5 class="white-text">Ariesse</h5>
+            <h6>Simplicity, clarity, versatility</h6>
+          </div>
+
+          <div class="col l4 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="https://github.com/algebananazzzzz" target="_blank">Github</a></li>
+              <li><a class="white-text" href="https://mail.google.com/mail/?view=cm&fs=1&to=danielp-devs@gmail.com" target="_blank">Email (No spams please)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="white-text text-lighten-3" href="https://github.com/algebananazzzzz" target="_blank">algebananazzzzz</a>, adapted from <a class="white-text text-lighten-3" href="https://materializecss.com" target="_blank">Materialize</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="bottom-navbar-wrapper">
+
+    <canvas class="canvas-basic"></canvas>
+    <div class="bottom-navbar-list">
+      <a href="#" id="default-state-cta" style="width:33.33333%" class="bottom-navbar-element">Aries</a>
+      <a href="#violet-state" id="violet-state-cta" style="width:33.33333%" class="bottom-navbar-element">Carina</a>
+      <a href="#orange-state" id="orange-state-cta" style="width:33.33333%" class="bottom-navbar-element">Draco</a>
+    </div>
+  </div>
+  <div class="botnav-offset">
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/aries-forms.js" charset="utf-8"></script>
+
+
+
+  <style media="screen">
+    .bgimg {
+      background-image: url("images/castle-home.jpg");
+    }
+  </style>
+
+</body>
+
+</html>

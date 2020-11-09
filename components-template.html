@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- kalam font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+
+  <!-- material icons stylesheet -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/aries.css">
+  <link rel="stylesheet" href="css/materialize.css">
+
+  <title>danielp's css</title>
+</head>
+
+<body>
+  <nav role="navigation" id="topnav" class="topnav-fixed nav-extended ">
+    <canvas class="canvas-basic"></canvas>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Aries</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <ul>
+            <li>
+              <a href="https://github.com/algebananazzzzz" target="_blank">
+                <!-- <img style="image:url('images/Octocat.jpg')"></img> -->
+                Github
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Quick start</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background" style="background-image: url('images/confetti-bg.jpg'); background-size:cover">
+            </div>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><img class="circle" src="images/castle-home.jpg"></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text name">Danielp's themes</span></a>
+            <a href="https://github.com/algebananazzzzz" target="_blank"><span class="white-text email">Visit in github</span></a>
+          </div>
+        </li>
+        <li><a class="waves-effect active" href="#!">Main page</a></li>
+        <li><a class="waves-effect" href="#!">Quick start</a></li>
+        <li><a class="waves-effect" href="docs.html">Documentation</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+
+    <div class="nav-content container">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="aries.html">Home</a></li>
+        <li class="tab"><a href="aries-css.html">CSS</a></li>
+        <li class="tab"><a class="active" href="#">Components</a></li>
+        <li class="tab"><a href="aries-javascript.html">Javascript</a></li>
+        <li class="tab"><a href="aries-forms.html">Forms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background" style="background-image: url('images/confetti-bg.jpg')">
+        </div>
+        <a href="#user"><img class="circle" src="images/castle-home.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+
+  </ul>
+
+  <div class="bgimg ">
+    <div class=" display-container">
+      <div class="display-middle" style="color:white">
+        <h1 class="homepage-name center">Components</h1>
+        <h5 class="center">Ariesse :p</h5>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-large">
+    <div class="row center">
+      <h3 class="light materialize-red-text text-lighten-2">Components</h3>
+      <h6>From alerts to preloaders</h6>
+      <p>Many components... but with the same style. Enjoy :))</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="container">
+
+    <h3>Alerts</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        This component is not found within the materialize documentations. <a href="#" class="alert-link">See my documentation!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 no-padding">
+        <div class="alert canvas-wrapper" role="alert">
+          <canvas class="canvas-basic"></canvas>
+          <p class="cta-wrapper white-text"> Alert with canvas wrapper, <a href="#" class="alert-link">alert-link</a>.
+          </p>
+        </div>
+      </div>
+      <div class="col s12 m6 no-padding">
+
+        <div class="alert gradient-primary" role="alert">
+          Alert with class of gradient-primary, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+
+        <div class="alert gradient-secondary" role="alert">
+          Alert with class of gradient-secondary, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-tertiary" role="alert">
+          Alert with class of gradient-tertiary, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-success" role="alert">
+          Alert with class of gradient-success, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-danger" role="alert">
+          Alert with class of gradient-danger, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-warning" role="alert">
+          Alert with class of gradient-warning, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-info" role="alert">
+          Alert with class of gradient-info, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+
+      </div>
+      <div class="col s12 m6  no-padding">
+        <div class="alert gradient-light" role="alert">
+          Alert with class of gradient-light, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-dark" role="alert">
+          Alert with class of gradient-dark, <a href="#" class="alert-link">alert-link</a>.
+        </div>
+        <div class="alert gradient-success" role="alert">
+          <h4 class="alert-heading">Alert heading</h4>
+          <p>Title</p>
+          <div class="divider">
+          </div>
+          <p>Content of this alert. Do you know that Aries is located in the Northern Hemisphere between Pisces to its west and Taurus to its east? The best view of Aries occurs on December nights around 9 p.m. local time.
+          </p>
+        </div>
+
+        <div class="alert gradient-warning alert-dismissible fade show" role="alert">
+          <strong>Dismissable alert: </strong>Click on close to close
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <h3>Badges</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        Simply include the class and canvas to enable granim effect. <a href="#" class="alert-link">Here's how to!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="new badge left">1</span>
+      <span class="new badge left" data-badge-caption="custom caption">4</span>
+      <span class="new badge left gradient-primary" data-badge-caption="gradient background">4</span>
+      <span class="new badge left canvas-wrapper" data-badge-caption="granim canvas">
+        <canvas class="canvas-basic" width="300" height="300"></canvas>
+        4</span>
+      <span class="new badge red left">4</span>
+      <span class="new badge blue left">4</span>
+    </div>
+
+    <h3>Buttons</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        Simply include the class and canvas to enable granim effect. <a href="#" class="alert-link">Here's how to!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6">
+        <a class="waves-effect waves-light btn">button</a>
+        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+        <a class="waves-effect btn-flat"><i class="material-icons right">cloud</i>button</a>
+        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+      <div class="col s6">
+        <a class="waves-effect waves-light btn gradient-primary">button</a>
+        <a class="waves-effect waves-light btn gradient-primary"><i class="material-icons left">cloud</i>Gradiented button</a>
+        <a class="waves-effect btn gradient-primary"><i class="material-icons right">cloud</i>button</a>
+        <a class="btn-floating btn-large waves-effect waves-light gradient-primary"><i class="cta-wrapper material-icons">add</i></a>
+      </div>
+      <div class="col s12">
+        <a class="waves-effect btn canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          Button with granim</a>
+        <a class="waves-effect btn-floating btn-large btn canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          <i class="cta-wrapper material-icons">add</i></a>
+      </div>
+    </div>
+
+    <h3>Breadcrumbs</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        You may have to add a "padding-left" style for better presentation. <a href="https://materializecss.com/breadcrumbs.html" class="alert-link">See the documentations!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="topnav">
+      <canvas class="canvas-basic opacity-off"></canvas>
+      <div class="nav-wrapper" style="padding-left:15px">
+        <div class="col s12">
+          <a href="#!" class="breadcrumb">Home</a>
+          <a href="#!" class="breadcrumb">Aries theme</a>
+          <a href="#!" class="breadcrumb">Components</a>
+          <a href="#!" class="breadcrumb">Breadcrumbs</a>
+        </div>
+      </div>
+    </nav>
+
+    <h3>Cards</h3>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel center materialize-red lighten-2 padding-8">
+          <h4 class="white-text">Conventional card styles
+          </h4>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a href="#test4">Test 1</a></li>
+              <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+              <li class="tab"><a href="#test6">Test 3</a></li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="test4">Test 1</div>
+            <div id="test5">Test 2</div>
+            <div id="test6">Test 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect">
+            <img class="activator" src="images/castle-home.jpg">
+            <span class="card-title activator white-text ">Image</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s12">
+        <div class="card-panel center padding-8 canvas-wrapper">
+          <canvas class="canvas-basic" width="300" height="300"></canvas>
+          <h4 class="white-text">Granim and gradient cards
+          </h4>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card gradient-primary">
+          <div class="card-content">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+
+        <div class="card canvas-wrapper">
+          <canvas class="canvas-basic"></canvas>
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-transparent tabs-fixed-width">
+              <li class="tab"><a href="#test1">Test 1</a></li>
+              <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test3">Test 3</a></li>
+            </ul>
+          </div>
+
+          <div class="card-content grey lighten-4">
+            <div id="test1">Test 1</div>
+            <div id="test2">Test 2</div>
+            <div id="test3">Test 3</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image waves-effect canvas-wrapper">
+            <canvas class=" activator" id="canvas-image-blending" style="z-index:1"></canvas>
+            <img class="activator" src="images/castle-home.jpg">
+
+            <span class="card-title activator white-text ">Image</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Collections</h3>
+    <div class="row">
+      <div class="col s12 m6">
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Names</h4>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+          </li>
+          <li class="collection-item active">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col s12 m6">
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Granim</h4>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-info-text">send</i></a></div>
+          </li>
+          <li class="collection-item canvas-wrapper">
+            <canvas class="canvas-basic"></canvas>
+            <div class="white-text">Alvin<a href="#!" class="secondary-content"><i class="material-icons white-text">send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-warning-text">
+                  send</i></a></div>
+          </li>
+          <li class="collection-item">
+            <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons gradient-secondary-text">send</i></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <h3>Floating action buttons</h3>
+    <div class="row">
+      <div class="col s12 m12 l6">
+        <h6>Normal</h6>
+        <div class="fixed-action-btn right" style="position:relative">
+          <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l6">
+        <h6>Granim</h6>
+        <div class="fixed-action-btn right" style="position:relative">
+          <a class="btn-floating btn-large canvas-wrapper">
+            <canvas class="canvas-basic"></canvas>
+            <i class="large material-icons">mode_edit</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating gradient-primary">
+                <i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating gradient-secondary">
+                <i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating gradient-tertiary">
+                <i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating canvas-wrapper"> <canvas class="canvas-basic"></canvas>
+                <i class="material-icons">attach_file</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3>Footer</h3>
+    <div class="row">
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2020 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <footer class="page-footer canvas-wrapper">
+      <canvas class="canvas-basic" width="300" height="300"></canvas>
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Granim footer</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+    <h3>Navbar</h3>
+    <div class="row">
+      <div class="alert gradient-info alert-dismissible fade show" role="alert">
+        There are further instructions required for the component to work completely. <a href="#" class="alert-link">See my documentation!</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="topnav">
+      <canvas class="canvas-basic"></canvas>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Navbar</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h3>Pagination</h3>
+
+    <ul class="pagination center">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+
+    <h3>Preloader</h3>
+
+    <div class="progress grey lighten-2">
+      <div class="determinate" style="width: 70%"> <canvas class="canvas-basic"></canvas>
+      </div>
+    </div>
+    <div class="progress grey lighten-2">
+      <div class="indeterminate"></div>
+    </div>
+    <div class="progress transparent-bg">
+      <canvas id="canvas-preloader"></canvas>
+    </div>
+
+  </div>
+
+  <footer class="page-footer canvas-wrapper">
+    <canvas class="canvas-basic" width="300" height="300"></canvas>
+    <div class="cta-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s12">
+            <h5 class="white-text">Ariesse</h5>
+            <h6>Simplicity, clarity, versatility</h6>
+          </div>
+
+          <div class="col l4 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="https://github.com/algebananazzzzz" target="_blank">Github</a></li>
+              <li><a class="white-text" href="https://mail.google.com/mail/?view=cm&fs=1&to=danielp-devs@gmail.com" target="_blank">Email (No spams please)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="white-text text-lighten-3" href="https://github.com/algebananazzzzz" target="_blank">algebananazzzzz</a>, adapted from <a class="white-text text-lighten-3" href="https://materializecss.com" target="_blank">Materialize</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="bottom-navbar-wrapper">
+
+    <canvas class="canvas-basic"></canvas>
+    <div class="bottom-navbar-list">
+      <a href="#" id="default-state-cta" style="width:33.33333%" class="bottom-navbar-element">Aries</a>
+      <a href="#violet-state" id="violet-state-cta" style="width:33.33333%" class="bottom-navbar-element">Carina</a>
+      <a href="#orange-state" id="orange-state-cta" style="width:33.33333%" class="bottom-navbar-element">Draco</a>
+    </div>
+  </div>
+  <div class="botnav-offset">
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/aries-components.js" charset="utf-8"></script>
+
+
+
+  <style media="screen">
+    .bgimg {
+      background-image: url("images/castle-home.jpg");
+    }
+  </style>
+
+</body>
+
+</html>
