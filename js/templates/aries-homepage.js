@@ -2,9 +2,27 @@ $(document).ready(function() {
   $('.sidenav').sidenav();
 });
 
+$(".dropdown-trigger").dropdown({
+  coverTrigger: false,
+  hover: true,
+});
 
 $(document).ready(function() {
-  $('.materialboxed').materialbox();
+  $('.parallax').parallax();
+});
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
+});
+
+$('.pushpin').each(function() {
+  var $this = $(this);
+  var $target = $('#' + $(this).attr('data-target'));
+  $this.pushpin({
+    top: $target.offset().top,
+    bottom: $target.offset().top + $target.outerHeight() - $this.height()
+  });
 });
 
 

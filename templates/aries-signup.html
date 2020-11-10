@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/aries.css">
+  <link rel="stylesheet" href="../css/materialize.css">
+
+  <title></title>
+</head>
+
+<body>
+  <div class="bgimg canvas-wrapper">
+    <canvas id="canvas-background"></canvas>
+    <div class=" display-container row">
+      <div class="display-middle white-text" style="width:350px">
+        <h4 class="center">Sign up with</h4>
+        <a class="btn-large gradient-secondary hover-0 z-depth-0 col s12 " href="#">
+          Google
+        </a>
+        <a class="btn-large  gradient-info hover-0 z-depth-0 col s12" href="#" style="margin-top: 15px;margin-bottom: 15px;">Facebook</a>
+        <h6 class="center">Or</h6>
+
+        <div class="input-field ">
+          <i class="material-icons prefix white-text">email</i>
+          <input id="email" type="email" class="validate white-text">
+          <label for="email" class="white-text">E-MAIL</label>
+        </div>
+        <div class="input-field ">
+          <i class="material-icons prefix white-text">lock</i>
+          <input id="password" type="password" class="validate white-text">
+          <label for="password" class="white-text">PASSWORD</label>
+        </div>
+        <div class="input-field ">
+          <i class="material-icons prefix white-text">check</i>
+          <input id="comfirm_password" type="password" class="validate white-text" onblur="match()" onfocus="match()" onchange="match()">
+          <label for="comfirm_password" class="white-text">COMFIRM PASSWORD</label>
+          <span class="helper-text" data-error="Password does not match :(" data-success="Gotcha!">
+        </div>
+        <a class="btn-large gradient-success hover-0 z-depth-1 col s12" href="#">
+          Sign up
+        </a>
+        <a class="white-text col s12" href="./aries-login.html" style="padding-left: 0;margin-top:10px">Login instead</a>
+
+      </div>
+    </div>
+  </div>
+  <a href="./aries-homepage.html"><i class="material-icons medium white-text" style="position:fixed; top:15px;left:15px">arrow_back</i>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="../js/templates/aries-signup.js" charset="utf-8"></script>
+</body>
+
+</html>

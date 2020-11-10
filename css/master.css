@@ -163,6 +163,12 @@ html, body {
   height: 64px
 }
 
+.topnav-offset-extended {
+  top: 0;
+  width: 100%;
+  height: 112px
+}
+
 /* tables */
 table.gradient-primary-striped tr {
   border-bottom: none;

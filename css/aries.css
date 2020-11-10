@@ -1,92 +1,113 @@
 /* gradients */
 .gradient-primary {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #d500f9 0%, #3d5afe 50%, #00e5ff 100%); }
+  background: linear-gradient(30deg, #d500f9 0%, #3d5afe 50%, #00e5ff 100%);
+}
 
 .gradient-primary-text {
   background: linear-gradient(30deg, #d500f9 0%, #3d5afe 50%, #00e5ff 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-secondary {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #cc2b5e, #753a88); }
+  background: linear-gradient(30deg, #cc2b5e, #753a88);
+}
 
 .gradient-secondary-text {
   background: linear-gradient(30deg, #cc2b5e, #753a88);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-tertiary {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #00e5ff 0%, #00e676 50%, #76ff03 100%); }
+  background: linear-gradient(30deg, #00e5ff 0%, #00e676 50%, #76ff03 100%);
+}
 
 .gradient-tertiary-text {
   background: linear-gradient(30deg, #00e5ff 0%, #00e676 50%, #76ff03 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-success {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #227e22 2.9%, #a8fb3c 90.3%); }
+  background: linear-gradient(30deg, #227e22 2.9%, #a8fb3c 90.3%);
+}
 
 .gradient-success-text {
   background: linear-gradient(30deg, #227e22 2.9%, #a8fb3c 90.3%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-info {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #363795, #005c97); }
+  background: linear-gradient(30deg, #363795, #005c97);
+}
 
 .gradient-info-text {
   background: linear-gradient(30deg, #363795, #005c97);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-warning {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #f12711, #f5af19); }
+  background: linear-gradient(30deg, #f12711, #f5af19);
+}
 
 .gradient-warning-text {
   background: linear-gradient(30deg, #f12711, #f5af19);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-danger {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #dd2476, #ff512f); }
+  background: linear-gradient(30deg, #dd2476, #ff512f);
+}
 
 .gradient-danger-text {
   background: linear-gradient(30deg, #dd2476, #ff512f);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-light {
   color: #607d8b !important;
-  background: linear-gradient(30deg, #ffffff, #ece9e6); }
+  background: linear-gradient(30deg, #ffffff, #ece9e6);
+}
 
 .gradient-light .alert-link {
-  color: #607d8b; }
+  color: #607d8b;
+}
 
 .gradient-light-text {
   background: linear-gradient(30deg, #ffffff, #ece9e6);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 .gradient-dark {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #29323c, #485563); }
+  background: linear-gradient(30deg, #29323c, #485563);
+}
 
 .gradient-dark-text {
   background: linear-gradient(30deg, #29323c, #485563);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+}
 
 /* top navbar */
 #topnav {
   position: relative;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 2
+}
 
 #topnav canvas {
   position: absolute;
@@ -98,19 +119,24 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 #topnav .nav-wrapper {
-  z-index: 1; }
+  z-index: 2;
+}
 
 #topnav:hover canvas {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .tabs.tabs-transparent .tab a.active {
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 /* footer */
 .canvas-wrapper.page-footer {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
 /*# sourceMappingURL=aries.css.map */
