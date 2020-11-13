@@ -169,6 +169,16 @@ html, body {
   height: 112px
 }
 
+/* slider */
+.slider {
+  height:400px !important
+}
+
+.slider ul.indicators {
+  z-index: 2;
+  bottom: 25px;
+}
+
 /* tables */
 table.gradient-primary-striped tr {
   border-bottom: none;

@@ -1,22 +1,22 @@
 /* gradients */
 .gradient-primary {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #d500f9 0%, #3d5afe 50%, #00e5ff 100%);
+  background: linear-gradient(30deg, #4568dc, #b06ab3);
 }
 
 .gradient-primary-text {
-  background: linear-gradient(30deg, #d500f9 0%, #3d5afe 50%, #00e5ff 100%);
+  background: linear-gradient(30deg, #4568dc, #b06ab3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-secondary {
   color: #ffffff !important;
-  background: linear-gradient(30deg, #cc2b5e, #753a88);
+  background: linear-gradient(30deg, #8a2387, #e94057, #f27121);
 }
 
 .gradient-secondary-text {
-  background: linear-gradient(30deg, #cc2b5e, #753a88);
+  background: linear-gradient(30deg, #8a2387, #e94057, #f27121);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -106,7 +106,6 @@
 #topnav {
   position: relative;
   background-color: transparent;
-  z-index: 2
 }
 
 #topnav canvas {
@@ -123,7 +122,7 @@
 }
 
 #topnav .nav-wrapper {
-  z-index: 2;
+  z-index: 1;
 }
 
 #topnav:hover canvas {

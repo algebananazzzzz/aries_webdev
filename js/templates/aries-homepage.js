@@ -11,9 +11,21 @@ $(document).ready(function() {
   $('.parallax').parallax();
 });
 
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true
+$(document).ready(function() {
+  $('.slider').slider();
+});
+
+$('.moveNextSlider').click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $('.slider').slider('next');
+});
+
+// move prev slider
+$('.movePrevSlider').click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $('.slider').slider('prev');
 });
 
 $('.pushpin').each(function() {
